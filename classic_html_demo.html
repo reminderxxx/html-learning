@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!-- 声明文档类型为 HTML5 -->
+<html lang="zh-CN">
+<!-- html 是整个网页最外层的根标签，lang 表示页面语言 -->
+<head>
+    <!-- 字符编码，防止中文乱码 -->
+    <meta charset="UTF-8">
+
+    <!-- 让移动端设备正常缩放页面 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 网页标题，会显示在浏览器标签上 -->
+    <title>HTML 学习示例项目</title>
+</head>
+<body>
+    <!-- header：页面头部区域，通常放标题、logo、简介等 -->
+    <header>
+        <h1>HTML 学习示例项目</h1>
+        <p>
+            这是一个
+            <strong>经典入门网页</strong>，
+            用来学习 HTML 的常用结构和标签。
+        </p>
+    </header>
+
+    <!-- nav：导航区域，通常放页面内部跳转或网站菜单 -->
+    <nav>
+        <a href="#about">关于我</a> |
+        <a href="#skills">学习内容</a> |
+        <a href="#schedule">学习计划表</a> |
+        <a href="#form">报名表单</a>
+    </nav>
+
+    <!-- main：页面主体内容，一个页面通常只有一个 main -->
+    <main>
+        <!-- section：表示一个独立的内容区块 -->
+        <section id="about">
+            <h2>关于我</h2>
+            <p>
+                我正在学习 <em>HTML</em>，希望掌握网页的基本结构、
+                常见标签，以及如何写出语义清晰的页面。
+            </p>
+
+            <!-- img：显示图片 -->
+            <img
+                src="https://via.placeholder.com/400x220"
+                alt="HTML 学习示意图"
+                width="400"
+            >
+            <p>
+                上面这张图片使用了 <code>img</code> 标签，
+                其中 <code>src</code> 是图片地址，
+                <code>alt</code> 是图片说明文字。
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2>HTML 常学内容</h2>
+
+            <h3>基础标签</h3>
+            <!-- ul：无序列表 -->
+            <ul>
+                <li>标题标签：h1 到 h6</li>
+                <li>段落标签：p</li>
+                <li>强调标签：strong、em</li>
+                <li>链接标签：a</li>
+                <li>图片标签：img</li>
+            </ul>
+
+            <h3>学习步骤</h3>
+            <!-- ol：有序列表 -->
+            <ol>
+                <li>先理解 HTML 文档的整体结构</li>
+                <li>再学习常用文本标签和列表标签</li>
+                <li>然后掌握表格、表单和语义化标签</li>
+                <li>最后通过项目练习巩固</li>
+            </ol>
+        </section>
+
+        <section id="schedule">
+            <h2>学习计划表</h2>
+
+            <!-- table：表格 -->
+            <table border="1" cellpadding="10">
+                <tr>
+                    <!-- th：表头单元格 -->
+                    <th>阶段</th>
+                    <th>学习内容</th>
+                    <th>目标</th>
+                </tr>
+                <tr>
+                    <!-- td：普通单元格 -->
+                    <td>第一天</td>
+                    <td>HTML 基本结构</td>
+                    <td>看懂完整网页骨架</td>
+                </tr>
+                <tr>
+                    <td>第二天</td>
+                    <td>常用标签</td>
+                    <td>会写标题、段落、列表、链接、图片</td>
+                </tr>
+                <tr>
+                    <td>第三天</td>
+                    <td>表格与表单</td>
+                    <td>能制作信息展示和输入页面</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="form">
+            <h2>报名学习表单</h2>
+
+            <!-- form：表单，用于收集用户输入 -->
+            <form>
+                <p>
+                    <!-- label 与 input 绑定，提升可用性 -->
+                    <label for="name">姓名：</label>
+                    <input id="name" type="text" placeholder="请输入你的姓名">
+                </p>
+
+                <p>
+                    <label for="email">邮箱：</label>
+                    <input id="email" type="email" placeholder="请输入你的邮箱">
+                </p>
+
+                <p>
+                    <label for="level">当前水平：</label>
+                    <select id="level">
+                        <option>零基础</option>
+                        <option>了解一点</option>
+                        <option>可以写简单页面</option>
+                    </select>
+                </p>
+
+                <p>
+                    <span>想学习的内容：</span>
+                    <label>
+                        <input type="checkbox"> HTML 基础
+                    </label>
+                    <label>
+                        <input type="checkbox"> 表单
+                    </label>
+                    <label>
+                        <input type="checkbox"> 语义化标签
+                    </label>
+                </p>
+
+                <p>
+                    <span>学习方式：</span>
+                    <label>
+                        <input type="radio" name="study-mode"> 自学
+                    </label>
+                    <label>
+                        <input type="radio" name="study-mode"> 跟教程练习
+                    </label>
+                </p>
+
+                <p>
+                    <label for="message">学习目标：</label><br>
+                    <textarea id="message" rows="5" cols="40" placeholder="请输入你的学习目标"></textarea>
+                </p>
+
+                <button type="submit">提交表单</button>
+                <button type="reset">重置内容</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- footer：页面底部区域 -->
+    <footer>
+        <hr>
+        <p>这个页面包含了 HTML 入门中最常用的结构和标签，适合反复阅读与修改练习。</p>
+    </footer>
+</body>
+</html>
